@@ -1,0 +1,32 @@
+main {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+      "uppvänster       upphöger"
+      "bottenvänster    bottenhöger";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+}
+body{
+    margin: 0;
+}
+h1{
+    text-align: center;
+}
+main section:nth-child(1) {
+  background-color: red;
+  grid-area: uppvänster;
+}
+main section:nth-child(2) {
+  background-color: blue;
+  grid-area: upphöger;
+}
+main section:nth-child(3) {
+  background-color: green;
+  grid-area: bottenvänster;
+}
+main section:nth-child(4) {
+  background-color: yellow;
+  grid-area: bottenhöger;
+}
